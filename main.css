@@ -1,0 +1,15 @@
+/*gutter is 10% of column width*/
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css?family=Pangolin");
+body {
+  font-family: 'Pangolin', cursive; }
+
+nav {
+  background-color: #f7f9f9; }
+
+.row:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+/*# sourceMappingURL=main.css.map */

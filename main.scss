@@ -1,0 +1,35 @@
+/*gutter is 10% of column width*/
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+body{
+	font-family: 'Pangolin', cursive;
+}
+@mixin grid($column_no:12){
+	$unit_width: (1/13.1)*100%;
+	$unit_gutter:$unit_width*0.1;
+	width: $column_no*$unit_width + ($column_no - 1)*$unit_gutter;
+	margin-right: $unit_gutter;
+}
+
+$green_color: #42f459;
+$blue_color: #27baf9;
+@mixin button_style($color){
+	border-radius: 10%;
+	background-color: $color;
+}
+
+nav{
+	background-color: #f7f9f9;
+}
+@mixin clear_fix{
+	&:after{
+		content: " ";
+		display: block;
+		clear: both;
+	}
+	
+}
+
+.row{
+	@include clear_fix;
+}
